@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>hello</title>
+<body>
+<form id="form">
+    <input type="text" name="one">
+    <input type="txet" name="tow">
+    
+</form>
+<button>try it</button>
+    <div id="result"></div>
+       <script>
+        var form=   document.getElementById("form");
+        var button =document.querySelector("button");
+        button.onclick = function(){
+            for (var i=0;i<=form.length;i++){   
+                document.getElementById("result").textContent=form[i].value
+            }
+        }
+
+    </script>
+</body>
+</html>
